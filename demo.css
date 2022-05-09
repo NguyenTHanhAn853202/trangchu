@@ -1,0 +1,27 @@
+
+/* biến thống số */
+:root{
+    --height-announce__information: 50px;
+}
+
+
+@keyframes grow{
+    0% {
+        transform: scale(0);
+        opacity: 0;
+    }
+    100%{
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+@media(max-width:720px) {
+    
+}
+@media((max-width:1200) and (min-width:720px)){
+
+}
+@media(min-width:1200px)
+{
+
+}

@@ -1,0 +1,239 @@
+.background{
+    background-image:url('https://anhdepfree.com/wp-content/uploads/2021/12/background-nhac-cu-thuyet-trinh_257311.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    /* background-color: red; */
+    left: 0;
+    top: 0;
+}
+
+/* phần mở đầu */
+.begin{
+    
+}
+.header{
+    display: flex;
+    justify-content:space-between;
+    height:60px;
+    width:100%;
+    background-color: rgb(214, 12, 12);
+    /* margin-top: 20px; */
+}
+.introduction{
+    display: flex;
+    padding-left:0 ;
+    margin-left: 5%;
+    margin-right:5%;
+}
+.introduction__content{
+    list-style: none;
+    font-size: 16px;
+    margin: 7px;
+    color: white;
+    
+}
+.introduction__text{
+    cursor: pointer;
+}
+.introduction__text:hover{
+    /* filter:opacity(70%) */
+    color: #333;
+}
+.wall::before{
+    content: "";
+    border-left: 3px solid rgb(206, 203, 203) ;
+    color: white;
+    height:18px;
+    /* position: relative; */
+    margin-right:10px;
+    text-align: center;
+    
+}
+/* Thông báo header */
+.announce__text:hover .announce{
+    display: block;
+    
+}
+.announce{
+    display: none;
+    position:absolute;
+    background-color:white;
+    height:300px;
+    width: 400px;
+    right:350px;
+    top: 55px;
+    
+    transform-origin: calc(100% - 20px) top;
+    animation: grow  linear 0.25s;
+}
+.announce::after{
+    content: "";
+    border-width: 15px 20px;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    position: absolute;
+    top: -24px;
+    right: 29px;
+}
+.announce::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 20px;
+    left: 0px;
+    top: -15px;
+    /* z-index: 100;
+    background-color: black; */
+  }
+.announce__none{
+   text-align: center;
+   font-weight: 300;
+   cursor: text;
+   /* chống copy  */
+   /* -webkit-touch-callout: none; */
+   /* -webkit-user-select: none; */
+/* -moz-user-select: none; */
+/* -ms-user-select: none; */
+/* -o-user-select: none; */
+    user-select: none;
+}
+.icon{
+    /* margin-right: 5px; */
+}
+
+/* css thuộc tính trong thong báo */
+.announce__header{
+    text-align: center;
+    font-size:18px;
+    padding:  10px;
+    margin:0;
+   color: rgb(135, 130, 130);
+   cursor:text;
+}
+.anncounce__list{
+    /* height: 230px; */
+    overflow:hidden;
+    position: relative;
+    /* padding-left: 10px; */
+
+}
+.announce__img{
+    width: 70px;
+    height:40px;
+    margin:auto;
+}
+.annouce__information{
+    position: relative;
+    width: 100%;
+    height:var(--height-announce__information);
+    display:flex;
+    padding-left: 10px;
+    background-color:rgb(226, 226, 226);
+    padding-top: 7.5px;
+}
+.annouce__information:hover{
+    /* filter:opacity(70%); */
+    background-color:rgb(201, 196, 196) ;
+
+}
+.announce__introduction-music{
+    flex: 1;
+    margin:0 5px;
+}
+.anounce__information-title{
+    margin: 0;
+    color: rgb(60, 60, 58);
+    font-size:17px;
+    font-weight:500;
+}
+.anounce__information-describe{
+    margin:0;
+    color: rgb(105, 105, 103);
+    font-size:13px;
+    font-weight:500;
+}
+.anounce__icon{
+    margin:auto;
+    color: rgb(237, 67, 67);
+    padding-right: 20px;
+}
+.anounce__icon:hover{
+ filter:opacity(60%)   
+}
+
+.announce__end-text{
+    /* margin:auto; */
+    text-align: center;
+    
+    margin-top: 0px;
+    padding: 5px;
+   color: rgb(80, 78, 78);
+   background-color:rgb(144, 228, 233)
+}
+/* Phần thân */
+.announce__end-text:hover{
+    filter:opacity(60%)
+}
+.language{
+    position:absolute;
+    top: 55px;
+    height:50px;
+    width: 120px;
+    background-color:white;
+    top: 55px;
+    right:270px;
+    border-radius:3px;
+    transform-origin: calc(100% - 20px) top;
+    animation: grow linear 0.15s;
+    display: none;
+}
+.introduction__content:hover .language{
+
+    display: block;
+}
+.language__colors{
+    color:rgb(232, 112, 26)!important;
+}
+.language__click{
+    display:block;
+    color: black;
+    text-align: center;
+    margin: 3px 0;
+    font-size:18px;
+    font-weight:300;
+}
+.language__click:hover{
+    color:rgb(232, 112, 26);
+}
+.language::before{
+    content: "";
+    display: block;
+    position: absolute;
+    border-width:10px 15px ;
+    border-style: solid;
+    border-color: transparent transparent white transparent;
+    top: -18px;
+    right: 5px;
+}
+.language::after{
+    content: "";
+    position: absolute;
+    height: 20px;
+    width: 100%;
+    /* background-color:red;    */
+    top: -15px;
+}
+.registration__box{
+    display: none;
+}
+.body{
+
+}
+
+/* Phần kết */
+.end{
+
+}
